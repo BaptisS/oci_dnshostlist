@@ -1,7 +1,7 @@
 # oci_dnshostlist
 oci_dnshostlist
 
-'''
+```
 compocid=
 vcnid=
 
@@ -13,5 +13,5 @@ vcnsub=$(oci network subnet list --compartment-id $compocid --vcn-id $vcnid)
 sublist=$(echo $vcnsub | jq -r '.data[] | ."id"') 
 for sub in $sublist; do ./pvtip.sh $sub ; done
 
-'''
+```
 
