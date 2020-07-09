@@ -5,6 +5,7 @@ oci_dnshostlist
 compocid=
 vcnid=
 
+rm -f pvtip.sh
 wget https://raw.githubusercontent.com/BaptisS/oci_dnshostlist/master/pvtip.sh
 chmod +x pvtip.sh 
 
