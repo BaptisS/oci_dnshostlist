@@ -1,7 +1,7 @@
 # oci_dnshostlist
 oci_dnshostlist
 
-This script helps creation of a single dns hostname list including all instances provisionned accross multiple VCNs. 
+This script helps creation of a single dns hostname list including all OCI instance's internal FQDN (.oraclevcn.com) provisionned accross multiple VCNs. 
 
 1- Sign-in to the OCI console using an user account with read permission over 'network-family' components in desired compartments. 
 
