@@ -8,10 +8,12 @@ This script helps creation of a single dns hostname list including all instances
 
 2- Start a ClousShell Instance. 
 
-pic startcloudshell
+![PMScreens](https://raw.githubusercontent.com/BaptisS/oci_dnshostlist/master/pics/StartCloudsh.JPG)
 
 
-3- Create a file named 'vcnlist.txt' containing the list of desired VCNs OCID and their respective compartments OCID. 
+3- Create a file named ***‘'vcnlist.txt'’*** containing the list of desired VCNs OCID and their respective compartments OCID. 
+
+![PMScreens](https://raw.githubusercontent.com/BaptisS/oci_dnshostlist/master/pics/cloudsh.JPG)
 
 ```
 vi vcnlist.txt
@@ -22,8 +24,11 @@ Fill the file with your VCN list in the form below :
 'VCN1 OCID'<space>'Compartment1 OCID' 
 'VCN2 OCID'<space>'Compartment1 OCID' 
 'VCN3 OCID'<space>'Compartment2 OCID' 
+  
+  
+![PMScreens](https://raw.githubusercontent.com/BaptisS/oci_dnshostlist/master/pics/vcnlist.txt.JPG)
 
-pic vcnlist.txt
+Save and Exit file editor. 
 
 ```
 [esc] :wq!
