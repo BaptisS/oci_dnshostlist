@@ -8,4 +8,5 @@ pvtip=$(oci network private-ip list --subnet-id $1)
 #echo $pvtip | jq '[.data[] | {hostname: ."hostname-label", ipaddr: ."ip-address", subnetid: ."subnet-id"}]' >> $1.txt
 
 finlist=$(echo $pvtip | jq '[.data[] | {hostname: ."hostname-label", ipaddr: ."ip-address", subnetid: ."subnet-id"}]')
-echo $finlist | jq -r --arg subnetname "$subnetname" '.[] | "\(.hostname)\t\($subnetname)\t\(.ipaddr)"' >> VCN.txt
+#echo $finlist | jq -r --arg subnetname "$subnetname" '.[] | "\(.hostname)\t\($subnetname)\t\(.ipaddr)"' >> VCN.txt
+echo $finlist | jq -r --arg subnetname "$subnetname" '.[] | "\(.ipaddr)\t\(.hostname)\t\(.hostname).($subnetname)"' >> vcn_dnshost.txt
