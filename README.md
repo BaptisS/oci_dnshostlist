@@ -1,11 +1,16 @@
 # oci_dnshostlist
 oci_dnshostlist
 
-This script help creation of a dns hostname list for all instances provisionned accross multiple VCNs. 
+This script helps creation of a single dns hostname list including all instances provisionned accross multiple VCNs. 
 
 1- Sign-in to the OCI console using an user account with read permission over 'network-family' components in desired compartments. 
+
+
 2- Start a ClousShell Instance. 
+
 pic startcloudshell
+
+
 3- Create a file named 'vcnlist.txt' containing the list of desired VCNs OCID and their respective compartments OCID. 
 
 ```
@@ -25,7 +30,9 @@ pic vcnlist.txt
 ```
 
 
+
 4- Copy/paste the following commands :  
+
 
 ```
 rm -f vcnhostlist.sh
