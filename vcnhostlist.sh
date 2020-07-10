@@ -14,3 +14,7 @@ while read -r arg_1 arg_2 ; do
     sublist=$(echo $vcnsub | jq -r '.data[] | ."id"') 
     for sub in $sublist; do ./pvtip.sh $sub ; done
 done < vcnlist.txt
+cp vcn_dnshost.txt vcn_dnshost_full.txt
+sed -i '/null/d' vcn_dnshost.txt
+echo 'DNS host list populated in vcn_dnshost.txt'
+cat vcn_dnshost.txt
