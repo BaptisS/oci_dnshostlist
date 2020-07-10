@@ -16,3 +16,13 @@ for sub in $sublist; do ./pvtip.sh $sub ; done
 
 ```
 
+---------------------------------------------------------------------
+Using a VCN List file (vcnlist.txt) as source. ['vcnid compartmentid'] 
+
+```
+rm -f vcnhostlist.sh
+wget https://raw.githubusercontent.com/BaptisS/oci_dnshostlist/master/vcnhostlist.sh
+chmod +x vcnhostlist.sh
+./vcnhostlist.sh
+
+```
